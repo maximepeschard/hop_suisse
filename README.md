@@ -1,7 +1,7 @@
 # hop_suisse
 Repository for ADA project
 
-This is a new team, from merging two ADA teams 
+The project is run by a new team, obtained by merging two ADA teams 
 
 
 - [Ondine]()
