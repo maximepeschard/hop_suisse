@@ -10,7 +10,7 @@
 
 
 ### Team
-[tatoule](https://github.com/ggrrll/tatoule)
+[hop_suisse](https://github.com/ggrrll/hop_suisse_ada_project_public)
 
 
 ### Abstract
@@ -58,6 +58,7 @@ The website contains indeed a quite large volume of interesting data, that will 
 (like merging datasets from different websites).
 The spatio-temporal  depth of the data will allows us to address several questions on sport habits in Switzerland, better described in the following section.  
 The only _risk_ we can foresee now (before actually having explored the dataset) concerns the _sparsity of the longitudinal data_. Namely, a rich time-series of results will  likely be available only for a very small fraction of athletes (and in particular runners). This will probably limit the statistical significance of the analysis of athletes' performance across time.
+If the volume of longitudinal data for runners will not be sufficient, we will explore datasets from other sport disciplines, like biking or triathlon that still present namy events, each year.
 
 
 ### Time-plan and Deliverables
