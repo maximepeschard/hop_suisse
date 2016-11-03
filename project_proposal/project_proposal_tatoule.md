@@ -58,7 +58,8 @@ The website contains indeed a quite large volume of interesting data, that will 
 (like merging datasets from different websites).
 The spatio-temporal  depth of the data will allows us to address several questions on sport habits in Switzerland, better described in the following section.  
 The only _risk_ we can foresee now (before actually having explored the dataset) concerns the _sparsity of the longitudinal data_. Namely, a rich time-series of results will  likely be available only for a very small fraction of athletes (and in particular runners). This will probably limit the statistical significance of the analysis of athletes' performance across time.
-If the volume of longitudinal data for runners will not be sufficient, we will explore datasets from other sport disciplines, like biking or triathlon that still present namy events, each year.
+If the volume of longitudinal data for runners will not be sufficient, we will similarly explore datasets from other sport disciplines, like biking or triathlon, as they also present many events, 
+each year.
 
 
 ### Time-plan and Deliverables
@@ -73,6 +74,11 @@ After the parsing, we will start our data analysis, keeping in mind the work-flo
 
 We will for instance try to find patterns in sport habits, across sex / age categories. 
 It will be interesting to compare two main types of analytics, namely supervised and unsupervised learning.
+
+We do not exclude the possibility of looking for interesting correlations 
+with data outside datasport.com.
+We would like to investigate for instance, how weather conditions might influence performance in sport. For these extra studies, additional data collections will be carried out, using publicly available data sources.
+
 
 #### Weeks 4-5-6: _inferential_ (and hopefully _predictive_) data analysis
 
