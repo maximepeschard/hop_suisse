@@ -1,11 +1,15 @@
-
 # Tools for (big) Data Visualization
 
+## D3.js
 
+* https://square.github.io/intro-to-d3/ (intro tutorial)
+* http://bl.ocks.org/mbostock (demos with code)
+
+## Python
 
 * Python modules for
- 	- maps http://jupyter.org/widgets.html -  http://leafletjs.com/
-	- interctive plots http://moderndata.plot.ly/widgets-in-ipython-notebook-and-plotly/ :)
+  * maps http://jupyter.org/widgets.html -  http://leafletjs.com/
+  * interctive plots http://moderndata.plot.ly/widgets-in-ipython-notebook-and-plotly/ :)
 
 
 ## nice reviews:
