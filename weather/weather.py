@@ -74,7 +74,7 @@ def extract_weather_info(json):
         # Extract hourly information
         hourly = {}
         for hweather in weather['hourly']:
-            time = int(hweather['time'])
+            time = hweather['time']
             temp = int(hweather['tempC'])
             ws = int(hweather['windspeedKmph'])
             hp = int(hweather['humidity'])
@@ -92,5 +92,6 @@ def extract_weather_info(json):
 
         return min_temp, max_temp, uv_index, hourly
     except KeyError:
+        print("error during parsing of weather info from API")
         raise Exception
 
