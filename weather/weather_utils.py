@@ -48,41 +48,40 @@ def search_weather(races_df, api_key):
 
         # If date too old (< 1st July 2008), no weather available, put nans and
         # go on...
-        if (month < 7) and (year < 2008):
-            print("old race")
+        if (year < 2008) or (month < 7 and year == 2008):
+            #print("old race")
             weather_df.loc[index, 'min_temp'] = np.nan
             weather_df.loc[index, 'max_temp'] = np.nan
             weather_df.loc[index, 'uv_index'] = np.nan
             weather_df.loc[index, 'description'] = None
-            continue
+        else:
+            # Lookup weather
+            weather_json = weather.lookup_weather(city, day, month, year, api_key)
 
-        # Lookup weather
-        weather_json = weather.lookup_weather(city, day, month, year, api_key)
+            # Extract weather info
+            try:
+                min_temp, max_temp, uv_index, hourly = weather.extract_weather_info(weather_json)
 
-        # Extract weather info
-        try:
-            min_temp, max_temp, uv_index, hourly = weather.extract_weather_info(weather_json)
+                weather_df.loc[index, 'min_temp'] = min_temp
+                weather_df.loc[index, 'max_temp'] = max_temp
+                weather_df.loc[index, 'uv_index'] = uv_index
 
-            weather_df.loc[index, 'min_temp'] = min_temp
-            weather_df.loc[index, 'max_temp'] = max_temp
-            weather_df.loc[index, 'uv_index'] = uv_index
-
-            descriptions = [hourly[k]['description'] for k in hourly.keys()]
-            from collections import Counter
-            count = Counter(descriptions)
-            if len(set([cnt for (_, cnt) in count.most_common()])) == 1:
-                # All descriptions are unique : take midday
-                desc = hourly['1200']['description']
-            else:
-                # Take most common description
-                desc = count.most_common()[0][0]
-            weather_df.loc[index, 'weather_desc'] = desc
-        except Exception as excep:
-            print(excep)
-            weather_df.loc[index, 'min_temp'] = np.nan
-            weather_df.loc[index, 'max_temp'] = np.nan
-            weather_df.loc[index, 'uv_index'] = np.nan
-            weather_df.loc[index, 'description'] = None
+                descriptions = [hourly[k]['description'] for k in hourly.keys()]
+                from collections import Counter
+                count = Counter(descriptions)
+                if len(set([cnt for (_, cnt) in count.most_common()])) == 1:
+                    # All descriptions are unique : take midday
+                    desc = hourly['1200']['description']
+                else:
+                    # Take most common description
+                    desc = count.most_common()[0][0]
+                weather_df.loc[index, 'weather_desc'] = desc
+            except Exception as excep:
+                #print(excep)
+                weather_df.loc[index, 'min_temp'] = np.nan
+                weather_df.loc[index, 'max_temp'] = np.nan
+                weather_df.loc[index, 'uv_index'] = np.nan
+                weather_df.loc[index, 'description'] = None
 
     # Merge dataframes
     new_dataframe = pd.concat([dataframe, weather_df], axis=1)
@@ -112,24 +111,32 @@ def build_weather_dataset(races_filename, api_key):
     races_df = pd.read_csv(races_filename, index_col=0)
 
     # Split data given API limitation
-    api_calls_limit = 500
+    api_calls_limit = 450
     num_chunks = round(races_df.shape[0] / api_calls_limit)
     chunks = np.array_split(races_df, num_chunks)
+    print("Data divided in {} chunks to fit API limit".format(num_chunks))
 
     # Create empty dataframe
     final_df = pd.DataFrame()
 
     # For each chunk, get new dataframe and add it to the final one
+    chunk_num = 0
     for chunk in chunks:
+        print("Processing chunk {}".format(chunk_num + 1))
+        chunk_num += 1
+
         # Search for weather information
         chunk_new = search_weather(chunk, api_key)
-        final_df.concat(chunk_new, axis=0)
+        final_df = pd.concat([final_df, chunk_new], axis=0)
 
         # Wait a bit more than 24 hours :-)
-        delta = datetime.timedelta(hours=25)
-        time.sleep(delta.total_seconds())
+        if (chunk_num != len(chunks)):
+            print("Entering sleep mode : see you tomorrow !")
+            delta = datetime.timedelta(hours=25)
+            time.sleep(delta.total_seconds())
 
     # Output final dataframe to CSV file
+    print("Exporting to CSV file")
     final_df.to_csv('races-information.csv')
 
 

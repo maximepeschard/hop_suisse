@@ -92,6 +92,6 @@ def extract_weather_info(json):
 
         return min_temp, max_temp, uv_index, hourly
     except KeyError:
-        print("error during parsing of weather info from API")
+        #print("error during parsing of weather info from API")
         raise Exception
 
