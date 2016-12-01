@@ -53,7 +53,7 @@ def search_weather(races_df, api_key):
             weather_df.loc[index, 'min_temp'] = np.nan
             weather_df.loc[index, 'max_temp'] = np.nan
             weather_df.loc[index, 'uv_index'] = np.nan
-            weather_df.loc[index, 'description'] = None
+            weather_df.loc[index, 'weather_desc'] = None
         else:
             # Lookup weather
             weather_json = weather.lookup_weather(city, day, month, year, api_key)
@@ -81,7 +81,7 @@ def search_weather(races_df, api_key):
                 weather_df.loc[index, 'min_temp'] = np.nan
                 weather_df.loc[index, 'max_temp'] = np.nan
                 weather_df.loc[index, 'uv_index'] = np.nan
-                weather_df.loc[index, 'description'] = None
+                weather_df.loc[index, 'weather_desc'] = None
 
     # Merge dataframes
     new_dataframe = pd.concat([dataframe, weather_df], axis=1)
@@ -128,6 +128,9 @@ def build_weather_dataset(races_filename, api_key):
         # Search for weather information
         chunk_new = search_weather(chunk, api_key)
         final_df = pd.concat([final_df, chunk_new], axis=0)
+
+        # Save intermediary step
+        chunk_new.to_csv("races-information-{}.csv".format(chunk_num))
 
         # Wait a bit more than 24 hours :-)
         if (chunk_num != len(chunks)):
