@@ -14,7 +14,8 @@ The project is run by a new team, obtained by merging two ADA teams
 ## Working steps
 
 Each step, described chronologically, corresponds to a folder. 
-* Project_proposal: Describes guideline, goals and objectives of the project.
+* [Project_proposal](https://github.com/maximepeschard/hop_suisse/blob/master/project_proposal/project_proposal_hop_suisse.md):
+Describes guideline, goals and objectives of the project.
 * Global_parsing: From datasport main page, make requests to extract all the names, dates and places of every running competition from, and the url links where to find the results.
     Done in the file: global_parsing.ipynb
     Dataset created: links2runs.csv
