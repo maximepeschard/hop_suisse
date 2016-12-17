@@ -140,7 +140,7 @@ def build_weather_dataset(races_filename, api_key):
 
     # Output final dataframe to CSV file
     print("Exporting to CSV file")
-    final_df.to_csv('races-information.csv')
+    final_df.to_csv('../datasets/races-information-weather.csv')
 
 
 if __name__ == '__main__':
