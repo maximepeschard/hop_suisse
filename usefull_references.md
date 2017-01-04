@@ -18,8 +18,7 @@
 ## Performance and Temperature
 
 * http://believeperform.com/performance/the-effects-of-heat-on-sport-performance/
-* http://runningstrong.com/temperature.html
-* 
+* http://runningstrong.com/temperature.html 
 
 ## Historical weather data 
 
