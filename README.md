@@ -67,7 +67,7 @@ In this section we describe our steps, (more or less) chronologically.
 
 * [data analysis](data_analysis) :
 
-> Data analysis, both on particular cases like Lausanne Marathon, and on the
+> Data analysis on both particular cases like Lausanne Marathon and on the
 > global dataset.
 
 * [visualization](https://hopsuisse.github.io) :
