@@ -95,3 +95,4 @@ ENV/
 full_database*
 dataframe_weather*
 df_year_fixed*
+df_duplicates_fixed*
