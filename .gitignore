@@ -93,3 +93,5 @@ ENV/
 
 # Database
 full_database*
+dataframe_weather*
+df_year_fixed*
