@@ -136,3 +136,10 @@ We used the Pandas library with the Python 3.5 language.
 >
 > _not null_
 
+### UserID
+> *dtype* object
+>
+> Unique identifier for the User. Name + Year
+> Not always correct. There can be 2 users with the same ID.
+>
+> _not null_
