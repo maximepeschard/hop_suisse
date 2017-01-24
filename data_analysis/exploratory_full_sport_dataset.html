@@ -11819,6 +11819,52 @@ $( document ).ready(function(){
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">HTML</span>
+
+<span class="n">HTML</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;&lt;style&gt;</span>
+<span class="s2">.lev1 {margin-left: 80px}</span>
+<span class="s2">.lev2 {margin-left: 100px}</span>
+<span class="s2">.lev3 {margin-left: 120px}</span>
+<span class="s2">.lev4 {margin-left: 140px}</span>
+<span class="s2">.lev5 {margin-left: 160px}</span>
+<span class="s2">.lev6 {margin-left: 180px}</span>
+<span class="s2">&lt;/style&gt;&quot;&quot;&quot;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt output_prompt">Out[1]:</div>
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<style>
+.lev1 {margin-left: 80px}
+.lev2 {margin-left: 100px}
+.lev3 {margin-left: 120px}
+.lev4 {margin-left: 140px}
+.lev5 {margin-left: 160px}
+.lev6 {margin-left: 180px}
+</style>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -11847,7 +11893,7 @@ Exploratory Statistics on the full Datasport dataset
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -11884,7 +11930,7 @@ Exploratory Statistics on the full Datasport dataset
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">full_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_pickle</span><span class="p">(</span><span class="s1">&#39;../../df_userID.pickle&#39;</span><span class="p">)</span>
@@ -11972,7 +12018,7 @@ dtype: object
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">full_df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s1">&#39;RaceID&#39;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -11992,7 +12038,7 @@ dtype: object
 
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[7]:</div>
+<div class="prompt output_prompt">Out[4]:</div>
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
@@ -12095,7 +12141,7 @@ dtype: object
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># in order to plot age (@time of the event!) instead of year of birth</span>
@@ -12352,7 +12398,7 @@ We therefore decided to keep only the unique  <em>name - birthday</em> tuples (<
 
 
 <div class="output_png output_subarea ">
-<img src="exploratory_full_sport_dataset_files/exploratory_full_sport_dataset_16_0.png"
+<img src="exploratory_full_sport_dataset_files/exploratory_full_sport_dataset_17_0.png"
 width=334
 height=291
 >
@@ -12453,7 +12499,7 @@ height=291
 
 
 <div class="output_png output_subarea ">
-<img src="exploratory_full_sport_dataset_files/exploratory_full_sport_dataset_21_0.png"
+<img src="exploratory_full_sport_dataset_files/exploratory_full_sport_dataset_22_0.png"
 width=338
 height=291
 >
@@ -12502,7 +12548,7 @@ height=291
 
 
 <div class="output_png output_subarea ">
-<img src="exploratory_full_sport_dataset_files/exploratory_full_sport_dataset_23_0.png"
+<img src="exploratory_full_sport_dataset_files/exploratory_full_sport_dataset_24_0.png"
 width=492
 height=343
 >
@@ -12579,7 +12625,7 @@ height=343
 
 
 <div class="output_png output_subarea ">
-<img src="exploratory_full_sport_dataset_files/exploratory_full_sport_dataset_26_0.png"
+<img src="exploratory_full_sport_dataset_files/exploratory_full_sport_dataset_27_0.png"
 width=498
 height=343
 >
@@ -12703,7 +12749,7 @@ height=343
 
 
 <div class="output_png output_subarea ">
-<img src="exploratory_full_sport_dataset_files/exploratory_full_sport_dataset_32_0.png"
+<img src="exploratory_full_sport_dataset_files/exploratory_full_sport_dataset_33_0.png"
 width=850
 height=2019
 >
@@ -12805,7 +12851,7 @@ In few events we observe a clear <em>decrease</em> of the mean runners' age (for
 
 
 <div class="output_png output_subarea ">
-<img src="exploratory_full_sport_dataset_files/exploratory_full_sport_dataset_38_0.png"
+<img src="exploratory_full_sport_dataset_files/exploratory_full_sport_dataset_39_0.png"
 width=505
 height=345
 >
@@ -12980,7 +13026,7 @@ following cell HAS TO BE CHECKED!
 
 
 <div class="output_png output_subarea ">
-<img src="exploratory_full_sport_dataset_files/exploratory_full_sport_dataset_45_0.png"
+<img src="exploratory_full_sport_dataset_files/exploratory_full_sport_dataset_46_0.png"
 width=505
 height=345
 >
@@ -13026,7 +13072,7 @@ height=345
 
 
 <div class="output_png output_subarea ">
-<img src="exploratory_full_sport_dataset_files/exploratory_full_sport_dataset_47_0.png"
+<img src="exploratory_full_sport_dataset_files/exploratory_full_sport_dataset_48_0.png"
 width=499
 height=345
 >
@@ -13141,7 +13187,7 @@ following cell HAS TO BE CHECKED!
 
 
 <div class="output_png output_subarea ">
-<img src="exploratory_full_sport_dataset_files/exploratory_full_sport_dataset_51_0.png"
+<img src="exploratory_full_sport_dataset_files/exploratory_full_sport_dataset_52_0.png"
 width=505
 height=345
 >
@@ -13618,7 +13664,7 @@ Here are some examples:</p>
 
 
 <div class="output_png output_subarea ">
-<img src="exploratory_full_sport_dataset_files/exploratory_full_sport_dataset_69_0.png"
+<img src="exploratory_full_sport_dataset_files/exploratory_full_sport_dataset_70_0.png"
 width=601
 height=585
 >
@@ -13669,7 +13715,7 @@ height=585
 
 
 <div class="output_png output_subarea ">
-<img src="exploratory_full_sport_dataset_files/exploratory_full_sport_dataset_71_0.png"
+<img src="exploratory_full_sport_dataset_files/exploratory_full_sport_dataset_72_0.png"
 width=851
 height=1185
 >
@@ -13721,7 +13767,7 @@ height=1185
 
 
 <div class="output_png output_subarea ">
-<img src="exploratory_full_sport_dataset_files/exploratory_full_sport_dataset_73_0.png"
+<img src="exploratory_full_sport_dataset_files/exploratory_full_sport_dataset_74_0.png"
 width=851
 height=1585
 >
@@ -13927,7 +13973,7 @@ found similar negative effects of high ambient temperature on resistance in cycl
 
 
 <div class="output_png output_subarea ">
-<img src="exploratory_full_sport_dataset_files/exploratory_full_sport_dataset_81_1.png"
+<img src="exploratory_full_sport_dataset_files/exploratory_full_sport_dataset_82_1.png"
 width=580
 height=585
 >
@@ -14026,7 +14072,7 @@ dataset size after subsetting for 42 km: (73666, 16)
 
 
 <div class="output_png output_subarea ">
-<img src="exploratory_full_sport_dataset_files/exploratory_full_sport_dataset_86_0.png"
+<img src="exploratory_full_sport_dataset_files/exploratory_full_sport_dataset_87_0.png"
 width=1654
 height=402
 >
@@ -14105,7 +14151,7 @@ dataset size after subsetting for 21 km: (130091, 16)
 
 
 <div class="output_png output_subarea ">
-<img src="exploratory_full_sport_dataset_files/exploratory_full_sport_dataset_89_0.png"
+<img src="exploratory_full_sport_dataset_files/exploratory_full_sport_dataset_90_0.png"
 width=1654
 height=402
 >
@@ -14184,7 +14230,7 @@ dataset size after subsetting for 10 km: (118205, 16)
 
 
 <div class="output_png output_subarea ">
-<img src="exploratory_full_sport_dataset_files/exploratory_full_sport_dataset_92_0.png"
+<img src="exploratory_full_sport_dataset_files/exploratory_full_sport_dataset_93_0.png"
 width=2855
 height=402
 >
@@ -14260,7 +14306,7 @@ height=402
 
 
 <div class="output_png output_subarea ">
-<img src="exploratory_full_sport_dataset_files/exploratory_full_sport_dataset_96_0.png"
+<img src="exploratory_full_sport_dataset_files/exploratory_full_sport_dataset_97_0.png"
 width=1654
 height=2002
 >
