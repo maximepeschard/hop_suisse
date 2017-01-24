@@ -228,4 +228,4 @@ if __name__ == "__main__":
     x[4,4] = 2.9
     foo = SpatOutlier(x)
     x1 = foo.fill_with_nan()
-    print x1[4,4]
+    print(x1[4,4])
