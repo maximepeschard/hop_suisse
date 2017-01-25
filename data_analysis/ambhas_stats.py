@@ -76,8 +76,8 @@ def mk_test(x, alpha = 0.05):
     
     # calculate S 
     s = 0
-    for k in xrange(n-1):
-        for j in xrange(k+1,n):
+    for k in range(n-1):
+        for j in range(k+1,n):
             s += np.sign(x[j] - x[k])
     
     # calculate the unique data
@@ -89,7 +89,7 @@ def mk_test(x, alpha = 0.05):
         var_s = (n*(n-1)*(2*n+5))/18
     else: # there are some ties in data
         tp = np.zeros(unique_x.shape)
-        for i in xrange(len(unique_x)):
+        for i in range(len(unique_x)):
             tp[i] = sum(unique_x[i] == x)
         var_s = (n*(n-1)*(2*n+5) + np.sum(tp*(tp-1)*(2*tp+5)))/18
     
