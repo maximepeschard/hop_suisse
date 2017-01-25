@@ -7,7 +7,7 @@
 
 - finish exploratory on full dataset
 - video
-
+- fix study with Weather
 
 ## antonio
 
