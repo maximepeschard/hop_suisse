@@ -6,18 +6,17 @@
 
 ## https://hopsuisse.github.io/runners/
 
-- when type a runner's name you get a nice plot...that is _not_ the 'speed' but the 'time' distribution
+- [x] [**FIXED**] when type a runner's name you get a nice plot...that is _not_ the 'speed' but the 'time' distribution
 
-- why some runners are completely missing ? (@deationor maybe ? ) - I just looked for some phd friends of mine in SV, that run with me - 
+- [x] [**FIXED**] why some runners are completely missing ? (@deationor maybe ? ) - I just looked for some phd friends of mine in SV, that run with me - 
 [giorgio tamo](http://www.alphafoto.com/images.php?runID=810&sn=14288), 
 [alessio prunotto](http://www.alphafoto.com/images.php?runID=810&sn=14139), etc...
 and [this guy that was runnning with 'one leg'](http://www.alphafoto.com/images.php?runID=744&sn=2169)
 
-- it's weird that there are _no_ results at all for some runners, like for instance 
+- [x] [**FIXED**] it's weird that there are _no_ results at all for some runners, like for instance 
 [this runner](https://hopsuisse.github.io/runners/?runner=Lazzarini+Reto+1973)
 
-
-- I don't think performance it's a 'performance factor' - maybe you can also remove it 
+- [x] [**FIXED**] I don't think performance it's a 'performance factor' - maybe you can also remove it 
 
 ## https://hopsuisse.github.io/races/
 
