@@ -25,9 +25,9 @@ and [this guy that was runnning with 'one leg'](http://www.alphafoto.com/images.
 
  - for the 'Times distribution' maybe you can split in m/f ?
 
- - 'run exploratory and statistical analysis on this data' (??): _exploratory_ is a type of stat. ana. ... (right?)
+ - [x] [**FIXED**] 'run exploratory and statistical analysis on this data' (??): _exploratory_ is a type of stat. ana. ... (right?)
 
- - '...for the sake of simplicity and ease of use.': maybe you should rephrase this sentence...
+ - [x] [**FIXED**] '...for the sake of simplicity and ease of use.': maybe you should rephrase this sentence...
 
 ## https://hopsuisse.github.io/lausanne/ - nice overall ;)
 
