@@ -43,18 +43,18 @@ and [this guy that was runnning with 'one leg'](http://www.alphafoto.com/images.
 
 ## https://hopsuisse.github.io/fullanalysis/
 
-- same here:  'refer to this Jupyter notebook hosted' - that's _not the open repo_ 
+- [**TODO when public updated**] same here: 'refer to this Jupyter notebook hosted' - that's _not the open repo_ 
 
-- I would improve the english of the 
+- [x] [**DONE, let me know if ok**] I would improve the english of the 
 [note on runner's uniqueness](https://hopsuisse.github.io/fullanalysis/#note-on-unique-runners)
 
-- axis labels missing in [this plot](https://hopsuisse.github.io/fullanalysis/#distribution-of-the-number-of-editions-per-race) - '# races  VS # editions/race'
+- [x] [**FIXED**] axis labels missing in [this plot](https://hopsuisse.github.io/fullanalysis/#distribution-of-the-number-of-editions-per-race) - '# races  VS # editions/race'
 
 - why not adding the threshold for the p-value in
 [this section](https://hopsuisse.github.io/fullanalysis/#age-across-editions) ? ;)  - p<0.05
 
 
-- could you try to plot better the _median_ in the 
+- [x] [**DONE, data file contains both mean and median times so we can switch **] could you try to plot better the _median_ in the 
 [age VS time plot](https://hopsuisse.github.io/fullanalysis/#statistics-on-performance-vs-age) ?  - just to see if we get better 'u-dependece' :)
 
 
