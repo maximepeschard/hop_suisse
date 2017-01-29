@@ -14,13 +14,13 @@ full_df.drop(['MinTemp','MaxTemp','Weather',
               'LivingPlace','Rank','Category','Name',
               'Race','Date','RaceYear','RaceMonth','Place'],axis=1,inplace=True)
 
-# select enthusiasts :) !!
-single_events_counts = full_df.UserID.value_counts()
-enthusiasts = [k for k,v in single_events_counts.items() if v>70]
+# # select enthusiasts :) !!
+# single_events_counts = full_df.UserID.value_counts()
+# enthusiasts = [k for k,v in single_events_counts.items() if v>70]
 
-# define dict for graph nodes
-# nodes_dict = dict.fromkeys(full_df.UserID.unique()[:20])
-nodes_dict = dict.fromkeys(enthusiasts)
+# # define dict for graph nodes
+nodes_dict = dict.fromkeys(full_df.UserID.unique()[:20])
+# nodes_dict = dict.fromkeys(enthusiasts)
 
 
 # define global vars for parallel
