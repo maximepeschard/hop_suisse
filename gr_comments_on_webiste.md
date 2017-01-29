@@ -22,7 +22,7 @@ and [this guy that was runnning with 'one leg'](http://www.alphafoto.com/images.
 
  very nice :)
 
- - for the 'Times distribution' maybe you can split in m/f ?
+ - [x] [**FIXED**] for the 'Times distribution' maybe you can split in m/f ? -> Now, when "all dates" is selected, the full times distributions are plotted, but when a specified date is selected, it is splitted f/m.
 
  - [x] [**FIXED**] 'run exploratory and statistical analysis on this data' (??): _exploratory_ is a type of stat. ana. ... (right?)
 
@@ -46,7 +46,7 @@ and [this guy that was runnning with 'one leg'](http://www.alphafoto.com/images.
 - [x] [**DONE, let me know if ok**] I would improve the english of the 
 [note on runner's uniqueness](https://hopsuisse.github.io/fullanalysis/#note-on-unique-runners)
 - [x] [**FIXED**] axis labels missing in [this plot](https://hopsuisse.github.io/fullanalysis/#distribution-of-the-number-of-editions-per-race) - '# races  VS # editions/race'
-- why not adding the threshold for the p-value in
+- [x] [**FIXED**] why not adding the threshold for the p-value in
 [this section](https://hopsuisse.github.io/fullanalysis/#age-across-editions) ? ;)  - p<0.05
 - [x] [**DONE, data file contains both mean and median times so we can switch**] could you try to plot better the _median_ in the 
 [age VS time plot](https://hopsuisse.github.io/fullanalysis/#statistics-on-performance-vs-age) ?  - just to see if we get better 'u-dependece' :)
