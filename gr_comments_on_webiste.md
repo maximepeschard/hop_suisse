@@ -42,7 +42,7 @@ and [this guy that was runnning with 'one leg'](http://www.alphafoto.com/images.
 
 ## https://hopsuisse.github.io/fullanalysis/
 
-- [**TODO when public updated**] same here: 'refer to this Jupyter notebook hosted' - that's _not the open repo_ 
+- [x] [**DONE**] same here: 'refer to this Jupyter notebook hosted' - that's _not the open repo_ 
 - [x] [**DONE, let me know if ok**] I would improve the english of the 
 [note on runner's uniqueness](https://hopsuisse.github.io/fullanalysis/#note-on-unique-runners)
 - [x] [**FIXED**] axis labels missing in [this plot](https://hopsuisse.github.io/fullanalysis/#distribution-of-the-number-of-editions-per-race) - '# races  VS # editions/race'
