@@ -100,3 +100,6 @@ df_added_category*
 intermediate_dataset*
 df_userID*
 tempdf*
+
+# gr's addition for MAC OS:
+.DS_store
