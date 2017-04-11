@@ -26,7 +26,7 @@
 * http://apidev.accuweather.com/developers/ 
 
 
-## journals 
+## Journals 
 
 (general)
 * http://www.bioxbio.com/if/html/PLOS-ONE.html
@@ -36,7 +36,7 @@
 * http://www.bioxbio.com/if/html/AM-J-SPORT-MED.html
 * http://www.bioxbio.com/if/html/BRIT-J-SPORT-MED.html
 
-  (in the following, the above papers were published)
+  (in the following ones, the above papers were published)
   * https://bmcsportsscimedrehabil.biomedcentral.com
   * http://www.bioxbio.com/if/html/J-SPORT-HEALTH-SCI.html
   * http://www.bioxbio.com/if/html/J-SPORT-SCI-MED.html
