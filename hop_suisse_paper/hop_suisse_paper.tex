@@ -6,10 +6,14 @@
 \author[2]{Antonio Iubatti}
 \author[2]{Maxime Peschard}
 \author[2]{Ondine Chanon}
-\author[2]{Michele Catasta}
+\author[3]{Michele Catasta}
 \author[1]{Marcel Salathé}
-\affil[1]{1. Global Health Institute, School of Life Sciences, Ecole Polytechnique Fédérale de Lausanne (EPFL), Lausanne, Switzerland.}
-\affil[2]{2. School of Computer Science, Ecole Polytechnique Fédérale de Lausanne (EPFL), Lausanne, Switzerland.}
+
+\affil[1]{Global Health Institute, School of Life Sciences, Ecole Polytechnique Fédérale de Lausanne (EPFL), Lausanne, Switzerland.}
+\affil[2]{School of Computer Science, Ecole Polytechnique Fédérale de Lausanne (EPFL), Lausanne, Switzerland.}
+
+\affil[3]{Department of Computer Science, Stanford University, Stanford, USA.}
+
 
 \affil[*]{gianrocco.lazzari@epfl.ch}
 
@@ -76,36 +80,103 @@ as show in \cite{connick2015relative} blabalblab
 
 	\subsection*{Demographics}
 	
-		In fig. \ref{participation_overall_by_distance} and \ref{participation_overall_by_gender} we show respectively how number of runners increased in the last 15 years, by distances and gender. This raise was faster for man then for women, and faster in the shorter distances (10 Km) than for longer one (participants in full marathons, 42 Km, seems to have decreased) \footnote{For simplicity we only include th e most popular distances. There are many events that include shorter distances, like 3 Km, 5 Km, usually attended by few young runners.}.
-		
-		
-				\begin{figure*}[h]	
-			
-					\centering
-					
-					\subfigure[]{\includegraphics[scale=0.8]{../data_analysis/plots_for_paper/participation_overall_by_distance.pdf}\label{participation_overall_by_distance}}
-%					\hfill
-					\subfigure[]{\includegraphics[scale=0.8]{../data_analysis/plots_for_paper/participation_overall_by_gender.pdf}\label{participation_overall_by_gender}}
-					
-					\caption{Number of participants in running competition in Switzerland, across time, by distance and gender.}
-					
-			
-		\end{figure*}		
+		In fig. \ref{participation_overall_by_distance} and \ref{participation_overall_by_gender} we show respectively how the number of runners increased in the last 15 years, by distances and gender. 
+		This raise was steeper for man than for women (fig. \ref{participation_overall_by_gender}), and steeper in the shorter distance (10 Km) than in the longer ones ( fig. \ref{participation_overall_by_distance} - participants in full marathons seems to have decreased though) \footnote{For simplicity we only include the most popular distances. 
+		There are many events that include shorter distances, like 3 Km, 5 Km, usually attended by a small fraction of young runners.}.
 	
+		\begin{figure}[h]	
+	
+			\centering
+			
+			\subfigure[]{\includegraphics[scale=0.8]{../data_analysis/plots_for_paper/participation_overall_by_distance.pdf}\label{participation_overall_by_distance}}
+%					\hfill
+			\subfigure[]{\includegraphics[scale=0.8]{../data_analysis/plots_for_paper/participation_overall_by_gender.pdf}\label{participation_overall_by_gender}}
+			
+			\caption{Number of participants in running competition in Switzerland, across time, by distance (a) and gender (b).}
+		
+		\end{figure}		
+	
+		For a significant analysis of runners' performance, it is important to check the amount of data present in the various events, and therefore first assess the heterogeneity of  events popularity.
+		In fig. \ref{dist_number_editions_race} we show the  distribution of number of editions each event was hosted, across all history. Counting all editions of  all races as independent, we recorded 222 events. 
+		More interestingly in fig. \ref{number_runners_per_race} one can see the broad distribution of number of participants in the different events. In particular, a power-law fit  ( $ f(x) \sim x^{-\alpha} $) provides an exponent of $ \alpha = 1.69 \pm 0.05 $\footnote{The power-law starts from  a lower-bound, whose value results as well from the fitting procedure: $ x_{min} = 688  $ runners/race}.
+		
+		\begin{figure}[h]	
+		
+			\centering
+			
+			\subfigure[]{\includegraphics[scale=0.4]{../data_analysis/plots_for_paper/dist_number_editions_race.pdf}\label{dist_number_editions_race}}
+			%					\hfill
+			\subfigure[]{\includegraphics[scale=0.4]{../data_analysis/plots_for_paper/number_runners_per_race.pdf}\label{number_runners_per_race}}
+			
+			\caption{Assess popularity of running competitions, in Switzerland.}
+		
+		
+		\end{figure}		
+	
+		Inversely, one can measure how participative runners have been across Switzerland. 
+		In fig. \ref{number_races_per_runner} we show the distribution\footnote{		One can see that a log-normal would fit better in this case than a power-law model. In particular the fitted parameters are $ \mu = -0.70, \sigma  = 1.55 $} of  the number of events to which each runners participated. We collected data from  a total number of 531426 runners.
+
+		
+		
+		\begin{figure}[h]	
+			
+			\centering
+			
+			\subfigure[]{\includegraphics[scale=0.4]{../data_analysis/plots_for_paper/number_races_per_runner.pdf}\label{number_races_per_runner}}
+			%					\hfill
+%			\subfigure[]{\includegraphics[scale=0.4]{../data_analysis/plots_for_paper/}\label{}}
+			
+			\caption{Assess how participative runners are across competitions, in Switzerland.}
+			
+			
+		\end{figure}					
 			
 	\subsection*{The case of Lausanne Marathon}
 		
-	
+	nice plots here :) 
 
 	\subsection*{Overall performance analysis}
 	
 		\subsubsection*{Age-performance relation}
 		
-			remember to cite the relevant papers 
-			\cite{knechtle2014relationship}
-			\cite{connick2015relative}
-			\cite{lara2014relationship}
-			\cite{lehto2016effects}
+		
+			We wanted to check whether the previously found	\cite{connick2015relative,knechtle2014relationship,lara2014relationship,lehto2016effects}
+			U-relation between age and performance holds as well in the case of swiss races. 
+			In fig. \ref{performance_VS_age_marathon} 
+			(\textbf{plot to be improved!}) 
+			we show the dependence of runners' performance on age, for four of the most popular swiss marathons. 
+			The above-mentioned U-shaped although still slightly appearing in the longest distance (42Km), it does emerge more clearly in the half-marathons, as  shown indeed in fig. \ref{performance_VS_age_semi_marathon}
+			(\textbf{plot to be improved!}) 
+			
+			
+			\begin{figure}[h]	
+		
+				\centering
+				
+				\includegraphics[scale=0.6]{../data_analysis/plots_for_paper/performance_VS_age_marathon.pdf}
+				
+				%				\subfigure[]{\includegraphics[scale=0.35]{../data_analysis/plots_for_paper/performance_VS_age_marathon.pdf}\label{performance_VS_age_marathon}}
+				%					\hfill
+				%						\subfigure[]{\includegraphics[scale=0.35]{../data_analysis/plots_for_paper/performance_VS_age_semi_marathon.pdf}\label{performance_VS_age_semi_marathon}}
+				
+				\caption{Relation between runners' performance (time in minutes to complete the race) and age, for the most popular marathons, color coded by gender.}
+				
+				\label{performance_VS_age_marathon}
+		
+			\end{figure}								
+		
+		
+			\begin{figure}[h]	
+			
+				\centering
+				
+				\includegraphics[scale=0.6]{../data_analysis/plots_for_paper/performance_VS_age_semi_marathon.pdf}
+				
+				\caption{Relation between runners' performance (time in minutes to complete the race) and age, for the most popular half-marathons (20 Km and 21 Km), color coded by gender.}
+				
+				\label{performance_VS_age_semi_marathon}
+			
+			\end{figure}								
 			
 		\subsubsection*{Temperature-performance relation}
 		
@@ -117,18 +188,18 @@ as show in \cite{connick2015relative} blabalblab
 			
 	
 	
-	\subsection*{Geographical analysis}
+		\subsection*{Geographical analysis}
 	
-		(to be included ??)
-		(by antonio)
+			(to be included ??)
+			(by Antonio)
+		
 	
-	
-	\subsection*{Network of runners}
+		\subsection*{Network of runners}
 	
 				(to be included ??)
 				(by Gr)
 		
-	\subsection*{Forecast of career advancement (??)}
+		\subsection*{Forecast of career advancement (??)}
 	
 				(not done yet)		\\
 				\href{https://fivethirtyeight.com/features/tell-us-two-things-and-well-tell-you-how-fast-youd-run-a-marathon/}{nice article on fivethertyeight},
@@ -146,7 +217,8 @@ as show in \cite{connick2015relative} blabalblab
 
 	\subsection*{Data parsing}
 	
-		@stefano
+		@stefano 
+		(remember to add the \textit{definition of runner})
 	
 		
 	
@@ -163,9 +235,6 @@ as show in \cite{connick2015relative} blabalblab
 		We also build an \href{https://www.youtube.com/watch?v=MyvbnOXHShw}{animated infographics}\footnote{\url{https://www.youtube.com/watch?v=MyvbnOXHShw}}, inspired by  \href{https://en.wikipedia.org/wiki/Hans_Rosling}{Hans Rosling}'s work. With such video we wanted to show in a more powerful and clear way the relations among runners' mean pace, experience and age, providing as well information on gender and race length
 		(the python code used to construct the video frames can be found in the \href{https://github.com/ggrrll/hop_suisse_ada_project_public/tree/master/8-video}{related folder}\footnote{\url{https://github.com/ggrrll/hop_suisse_ada_project_public/tree/master/8-video}} of our GitHub repository).
 	
-\bibliography{bib_hop_suisse}
-
-%\noindent LaTeX formats citations and references automatically using the bibliography records in your .bib file, which you can edit via the project menu. Use the cite command for an inline citation, e.g.  \cite{Figueredo:2009dg}.
 
 %\section*{Acknowledgements (not compulsory)}
 %
@@ -186,6 +255,15 @@ All the code used to parse the data from \url{https://www.datasport.com/en/}, fo
 \section*{Competing financial interests}
 
 The authors declare no conflict of interests.
+
+
+%%%%%% %%%%%% %%%%%% %%%%%%  BIBLIOGRAPHY %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% 
+
+\newpage
+\bibliography{bib_hop_suisse}
+
+%\noindent LaTeX formats citations and references automatically using the bibliography records in your .bib file, which you can edit via the project menu. Use the cite command for an inline citation, e.g.  \cite{Figueredo:2009dg}.
+
 
 %To include, in this order: 
 %\textbf{Accession codes} (where applicable); 
