@@ -1,0 +1,51 @@
+\begin{thebibliography}{1}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\expandafter\ifx\csname doiprefix\endcsname\relax\def\doiprefix{DOI }\fi
+\providecommand{\bibinfo}[2]{#2}
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem{connick2015relative}
+\bibinfo{author}{Connick, M.~J.}, \bibinfo{author}{Beckman, E.~M.} \&
+  \bibinfo{author}{Tweedy, S.~M.}
+\newblock \bibinfo{journal}{\bibinfo{title}{Relative age affects marathon
+  performance in male and female athletes}}.
+\newblock {\emph{\JournalTitle{Journal of sports science \& medicine}}}
+  \textbf{\bibinfo{volume}{14}}, \bibinfo{pages}{669} (\bibinfo{year}{2015}).
+
+\bibitem{knechtle2014relationship}
+\bibinfo{author}{Knechtle, B.}, \bibinfo{author}{Assadi, H.},
+  \bibinfo{author}{Lepers, R.}, \bibinfo{author}{Rosemann, T.} \&
+  \bibinfo{author}{R{\"u}st, C.~A.}
+\newblock \bibinfo{journal}{\bibinfo{title}{Relationship between age and elite
+  marathon race time in world single age records from 5 to 93 years}}.
+\newblock {\emph{\JournalTitle{BMC sports science, medicine and
+  rehabilitation}}} \textbf{\bibinfo{volume}{6}}, \bibinfo{pages}{31}
+  (\bibinfo{year}{2014}).
+
+\bibitem{lara2014relationship}
+\bibinfo{author}{Lara, B.}, \bibinfo{author}{Salinero, J.~J.} \&
+  \bibinfo{author}{Del~Coso, J.}
+\newblock \bibinfo{journal}{\bibinfo{title}{The relationship between age and
+  running time in elite marathoners is u-shaped}}.
+\newblock {\emph{\JournalTitle{Age}}} \textbf{\bibinfo{volume}{36}},
+  \bibinfo{pages}{1003--1008} (\bibinfo{year}{2014}).
+
+\bibitem{lehto2016effects}
+\bibinfo{author}{Lehto, N.}
+\newblock \bibinfo{journal}{\bibinfo{title}{Effects of age on marathon
+  finishing time among male amateur runners in stockholm marathon 1979--2014}}.
+\newblock {\emph{\JournalTitle{Journal of Sport and Health Science}}}
+  \textbf{\bibinfo{volume}{5}}, \bibinfo{pages}{349--354}
+  (\bibinfo{year}{2016}).
+
+\bibitem{vickers2016empirical}
+\bibinfo{author}{Vickers, A.~J.} \& \bibinfo{author}{Vertosick, E.~A.}
+\newblock \bibinfo{journal}{\bibinfo{title}{An empirical study of race times in
+  recreational endurance runners}}.
+\newblock {\emph{\JournalTitle{BMC Sports Science, Medicine and
+  Rehabilitation}}} \textbf{\bibinfo{volume}{8}}, \bibinfo{pages}{26}
+  (\bibinfo{year}{2016}).
+
+\end{thebibliography}

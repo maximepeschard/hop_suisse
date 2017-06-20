@@ -1,0 +1,19 @@
+This is 8-bit Big BibTeX version 0.99d
+Implementation:  C for Unix
+Release version: 3.71 (18 mar 2013)
+
+The 8-bit codepage and sorting file: 88591lat.csf
+The top-level auxiliary file: hop_suisse_paper.aux
+The style file: naturemag-doi.bst
+Reallocated glb_str_ptr (elt_size=8) to 10 items from 0.
+Reallocated global_strs (elt_size=20001) to 10 items from 0.
+Reallocated glb_str_end (elt_size=8) to 10 items from 0.
+Database file #1: bib_hop_suisse.bib
+
+Here's how much of BibTeX's memory you used:
+ Cites:                 5 out of 750
+ Fields:              116 out of 5000
+ Hash table:        35078 out of 35307
+ Strings:            1018 out of 35307
+ Free string pool:   9977 out of 65000
+ Wizard functions:   2382 out of 3000
