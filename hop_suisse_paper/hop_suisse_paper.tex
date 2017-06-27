@@ -128,30 +128,43 @@ as show in \cite{connick2015relative} blabalblab
 	\subsection*{The case of Lausanne Marathon}
 		
 		We consider the case of 2016 Lausanne Marathon event to present some relevant statistics on age and performance distribution, due to his popularity across all Switzerland (see indeed also fig. \ref{origin_towns_dist} for the distribution of runners' origin towns).
-		Apart from the 812 kids (younger than 14 years) running  a shorter race, the 2016 edition had over 10K participants, divided per race  and gender, as shown in table \ref{counts_per_distance} (\textbf{set the 2 tables next to each other!})
+		Apart from the 812 kids (younger than 14 years) running  a shorter race, the 2016 edition had more than 10 thousands participants, divided per race  and gender, as shown in table \ref{counts_per_distance}. 
 
 
 % thanks to http://truben.no/table/
 
 	 	\begin{table}
-	 		\begin{tabular}{l|l}
+	 		\centering
+	 		\begin{tabular}[t]{l|l}
 	 			Category     & Number of participants \\ \hline
 	 			10 km         & 5515                   \\
 	 			half-marathon & 4414                   \\
 	 			marathon      & 1318                   \\
 	 		\end{tabular}
- 		
- 			\begin{tabular}{l|l}
+ 			\hfill
+ 			\begin{tabular}[t]{l|l}
 				Gender     		& Number of participants \\ \hline
  				M       	  & 6905 					\\
 				F		 		& 4655                   \\
  			\end{tabular}
- 		\caption{Number of participants in 2016 Lausanne Marathon}
+ 		\caption{Distribution of number of participants in 2016 Lausanne Marathon, by distance and gender.}
  		\label{counts_per_distance}
 	 	\end{table}
  	
- 		In fig. \ref{women_age_dist_lausanne} and \ref{men_age_dist_lausanne}
- 		
+ 		In fig. \ref{women_age_dist_lausanne} and \ref{men_age_dist_lausanne} we show the distribution of runners' ages in the three main races and divided by gender.
+ 		For women, even if the median age increases with the distance, begin respectively 
+ 		34 y.o. (10 Km),
+ 		36 y.o. (21 Km) and
+ 		38 y.o. (42 Km),
+ 		only the women running the 10 Km were 
+ 		significantly\footnote{All reported tests are done using two-tailed p-value on \href{https://en.wikipedia.org/wiki/Kolmogorov–Smirnov\_test\#Two-sample\_Kolmogorov.E2.80.93Smirnov_test}{Kolmogorov-Smirnov test} $ p \leq 10^{-3} $ .} 
+ 		younger.
+ 		For men, median ages also slightly increases with distance
+ 		39 y.o. (10 Km),
+ 		39 y.o. (21 Km) and
+ 		42 y.o. (42 Km),
+ 		but only the men running the full marathon are significantly older.
+ 		Furthermore, women are significantly younger than men in all three races.
  		
 		\begin{figure}[h]	
 			\centering
@@ -160,9 +173,39 @@ as show in \cite{connick2015relative} blabalblab
 			%					\hfill
 			\subfigure[]{\includegraphics[scale=0.4]{../data_analysis/plots_for_paper/men_age_dist_lausanne.pdf}\label{men_age_dist_lausanne}}
 			
-			\caption{Runners' age distribution in 2016 Lausanne Marathon, for women (a) and men (b) and divided by race (color-coded).}
+			\caption{Runners' age distribution in 2016 Lausanne Marathon, for women (a) and men (b) and divided by race (color-coded). For clarity we only plot the Gaussian kernel estimate of the distribution.}
 		\end{figure}		 		
 		 		
+ 		
+ 		In fig. \ref{10km_perf_dist_lausanne}, \ref{half_marathon_perf_dist_lausanne} and \ref{marathon_perf_dist_lausanne} we compare the distribution of performances by gender,  for each race. We found the men were significantly faster in all races.
+ 				 		
+		\begin{figure}[h]	
+ 			\centering
+ 			
+ 			\subfigure[]{\includegraphics[scale=0.4]{../data_analysis/plots_for_paper/10km_perf_dist_lausanne.pdf}\label{10km_perf_dist_lausanne}}
+ 			%					\hfill
+ 			\subfigure[]{\includegraphics[scale=0.4]{../data_analysis/plots_for_paper/half_marathon_perf_dist_lausanne.pdf}\label{half_marathon_perf_dist_lausanne}}
+ 			
+ 			\subfigure[]{\includegraphics[scale=0.4]{../data_analysis/plots_for_paper/marathon_perf_dist_lausanne.pdf}\label{marathon_perf_dist_lausanne}}
+ 			
+ 			\caption{Runners' performance distribution in 2016 Lausanne Marathon, for 10 Km (a), half marathon (b) and marathon (c), divided by gender (color-coded).}
+ 		\end{figure}		 		
+ 	
+ 	
+ 	
+ 		It is  also worthy to compare the \textit{pace}-$ \pi $ (min/Km) across different races. 
+ 		One of course would expect that longer races require higher pace ($ \pi_{10} < \pi_{21} < \pi_{42} $). 
+ 		These differences were found to be significant for men \ref{men_pace_dist_lausanne} for all races and for women running  \ref{women_pace_dist_lausanne} the marathon (difference $ \langle \pi_{10}  \rangle -  \langle \pi_{21}  \rangle $ for women was not significant)
+ 		
+		\begin{figure}[h]	
+ 			\centering
+ 			
+ 			\subfigure[]{\includegraphics[scale=0.45]{../data_analysis/plots_for_paper/women_pace_dist_lausanne.pdf}\label{women_pace_dist_lausanne}}
+ 			%					\hfill
+ 			\subfigure[]{\includegraphics[scale=0.45]{../data_analysis/plots_for_paper/men_pace_dist_lausanne.pdf}\label{men_pace_dist_lausanne}}
+ 		
+ 			\caption{Runners' pace distribution in 2016 Lausanne Marathon, for women (a) and men (b), divided by distance (color-coded).}
+ 		\end{figure}		 		
 	
 	
 	\subsection*{Overall performance analysis}
@@ -224,7 +267,7 @@ as show in \cite{connick2015relative} blabalblab
 			
 			It is interesting to assess from which cities runners come, and how many of them, from the different locations. 
 			In fig. \ref{origin_towns_dist} we report as an example the quite 
-			broad\footnote{Fittetd exponent: $ \alpha = 1.90 \pm 0.03 $} distribution of number of runners, coming from the 2005 municipalities reported for the 2016 Lausanne Marathon.
+			broad\footnote{Fitted exponent: $ \alpha = 1.90 \pm 0.03 $} distribution of number of runners, coming from the 2005 municipalities reported for the 2016 Lausanne Marathon.
 			
 			\begin{figure}[h]	
 				
