@@ -307,6 +307,34 @@ as show in \cite{connick2015relative} blabalblab
 		@stefano 
 		(remember to add the \textit{definition of runner})
 	
+        We parsed the runner data directly from the \url{datasport.com} website. 
+        We collected more than 1.5 million entry from 2000 to 2015 in 223 distinct races.
+        We did not focus on a particular race length. For example we included in our dataset 
+        1km races for kids as well as ultra-marathon 200km races.
+
+        Each entry refers to the performance of a runner in a race. It is composed of the following 
+        fields:
+        \begin{itemize}
+            \item Race information. i.e. race name, race date, distance, race ID, temperature and weather.
+            \item User information. i.e. name, sex, year of birth, user ID.
+            \item Performance. i.e. time, pace, final rank and category.
+        \end{itemize}
+
+        We used a conservative approach in the parsing to reduce as much as possible the number of errors, while still
+        being able 
+
+        In Figure \ref{fig:exParsing} we show an example of 
+        webpage that we parsed. 
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[scale=0.32]{Figures/exampleParsing.png}
+    \caption{Example of parsed webpage from \url{datasport.com}.}
+      % \kmyirmk{Just let latex do it's job. Don't bother moving the
+      %   figures around.}}
+    \label{fig:exParsing}
+\end{figure}
+
 		
 	
 	
