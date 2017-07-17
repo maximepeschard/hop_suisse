@@ -78,56 +78,13 @@ as show in \cite{connick2015relative} blabalblab
 % 
 %Topical subheadings are allowed.
 
-	\subsection*{Demographics}
-	
-		In fig. \ref{participation_overall_by_distance} and \ref{participation_overall_by_gender} we show respectively how the number of runners increased in the last 15 years, by distances and gender. 
-		This raise was steeper for man than for women (fig. \ref{participation_overall_by_gender}), and steeper in the shorter distance (10 Km) than in the longer ones ( fig. \ref{participation_overall_by_distance} - participants in full marathons seems to have decreased though) \footnote{For simplicity we only include the most popular distances. 
-		There are many events that include shorter distances, like 3 Km, 5 Km, usually attended by a small fraction of young runners.}.
-	
-		\begin{figure}[h]	
-	
-			\centering
-			
-			\subfigure[]{\includegraphics[scale=0.8]{../data_analysis/plots_for_paper/participation_overall_by_distance.pdf}\label{participation_overall_by_distance}}
-%					\hfill
-			\subfigure[]{\includegraphics[scale=0.8]{../data_analysis/plots_for_paper/participation_overall_by_gender.pdf}\label{participation_overall_by_gender}}
-			
-			\caption{Number of participants in running competition in Switzerland, across time, by distance (a) and gender (b).}
-		
-		\end{figure}		
-	
-		For a significant analysis of runners' performance, it is important to check the amount of data present in the various events, and therefore first assess the heterogeneity of  events popularity.
-		In fig. \ref{dist_number_editions_race} we show the  distribution of number of editions each event was hosted, across all history. Counting all editions of  all races as independent, we recorded 222 events. 
-		More interestingly in fig. \ref{number_runners_per_race} one can see the broad distribution of number of participants in the different events. In particular, a power-law fit  ( $ f(x) \sim x^{-\alpha} $) provides an exponent of $ \alpha = 1.69 \pm 0.05 $\footnote{The power-law starts from  a lower-bound, whose value results as well from the fitting procedure: $ x_{min} = 688  $ runners/race}.
-		
-		\begin{figure}[h]	
-			\centering
-			
-			\subfigure[]{\includegraphics[scale=0.4]{../data_analysis/plots_for_paper/dist_number_editions_race.pdf}\label{dist_number_editions_race}}
-			%					\hfill
-			\subfigure[]{\includegraphics[scale=0.4]{../data_analysis/plots_for_paper/number_runners_per_race.pdf}\label{number_runners_per_race}}
-			
-			\caption{Assess popularity of running competitions, in Switzerland.}
-		\end{figure}		
-	
-		Inversely, one can measure how participative runners have been across Switzerland. 
-		In fig. \ref{number_races_per_runner} we show the distribution\footnote{		One can see that a log-normal would fit better in this case than a power-law model. In particular the fitted parameters are $ \mu = -0.70, \sigma  = 1.55 $} of  the number of events to which each runners participated. We collected data from  a total number of 531426 runners.
 
-		
-		
-		\begin{figure}[h]	
-			\centering
-			
-			\subfigure[]{\includegraphics[scale=0.4]{../data_analysis/plots_for_paper/number_races_per_runner.pdf}\label{number_races_per_runner}}
-			%					\hfill
-%			\subfigure[]{\includegraphics[scale=0.4]{../data_analysis/plots_for_paper/}\label{}}
-			
-			\caption{Assess how participative runners are across competitions, in Switzerland.}
-		\end{figure}					
 			
 	\subsection*{The case of Lausanne Marathon}
 		
-		We consider the case of 2016 Lausanne Marathon event to present some relevant statistics on age and performance distribution, due to his popularity across all Switzerland (see indeed also fig. \ref{origin_towns_dist} for the distribution of runners' origin towns).
+
+		Before the analysis on the whole dataset, we give hints on how relevant statistics on age and performance look like in the case of a single sport event.
+		For this purpose, we consider the case of 2016 \href{https://en.lausanne-marathon.com}{Lausanne Marathon }, due to his popularity across all Switzerland (see indeed also fig. \ref{origin_towns_dist} for the distribution of runners' origin towns).
 		Apart from the 812 kids (younger than 14 years) running  a shorter race, the 2016 edition had more than 10 thousands participants, divided per race  and gender, as shown in table \ref{counts_per_distance}. 
 
 
@@ -151,20 +108,20 @@ as show in \cite{connick2015relative} blabalblab
  		\label{counts_per_distance}
 	 	\end{table}
  	
- 		In fig. \ref{women_age_dist_lausanne} and \ref{men_age_dist_lausanne} we show the distribution of runners' ages in the three main races and divided by gender.
+ 		In fig. \ref{women_age_dist_lausanne} and \ref{men_age_dist_lausanne} we show the distribution of runners' ages in the three main races, divided by gender.
  		For women, even if the median age increases with the distance, begin respectively 
- 		34 y.o. (10 Km),
- 		36 y.o. (21 Km) and
- 		38 y.o. (42 Km),
+ 		34 y (10 Km),
+ 		36 y (21 Km) and
+ 		38 y (42 Km),
  		only the women running the 10 Km were 
  		significantly\footnote{All reported tests are done using two-tailed p-value on \href{https://en.wikipedia.org/wiki/Kolmogorov–Smirnov\_test\#Two-sample\_Kolmogorov.E2.80.93Smirnov_test}{Kolmogorov-Smirnov test} $ p \leq 10^{-3} $ .} 
  		younger.
  		For men, median ages also slightly increases with distance
- 		39 y.o. (10 Km),
- 		39 y.o. (21 Km) and
- 		42 y.o. (42 Km),
- 		but only the men running the full marathon are significantly older.
- 		Furthermore, women are significantly younger than men in all three races.
+ 		(39 y (10 Km),
+ 		39 y (21 Km) and
+ 		42 y (42 Km)),
+ 		but only the men running the full marathon were significantly older.
+ 		Furthermore, women were significantly younger than men in all three races.
  		
 		\begin{figure}[h]	
 			\centering
@@ -182,7 +139,7 @@ as show in \cite{connick2015relative} blabalblab
 		\begin{figure}[h]	
  			\centering
  			
- 			\subfigure[]{\includegraphics[scale=0.4]{../data_analysis/plots_for_paper/10km_perf_dist_lausanne.pdf}\label{10km_perf_dist_lausanne}}
+ 			\subfigure[xticks?!! -- to be fixed! ]{\includegraphics[scale=0.4]{../data_analysis/plots_for_paper/10km_perf_dist_lausanne.pdf}\label{10km_perf_dist_lausanne}}
  			%					\hfill
  			\subfigure[]{\includegraphics[scale=0.4]{../data_analysis/plots_for_paper/half_marathon_perf_dist_lausanne.pdf}\label{half_marathon_perf_dist_lausanne}}
  			
@@ -193,9 +150,9 @@ as show in \cite{connick2015relative} blabalblab
  	
  	
  	
- 		It is  also worthy to compare the \textit{pace}-$ \pi $ (min/Km) across different races. 
- 		One of course would expect that longer races require higher pace ($ \pi_{10} < \pi_{21} < \pi_{42} $). 
- 		These differences were found to be significant for men \ref{men_pace_dist_lausanne} for all races and for women running  \ref{women_pace_dist_lausanne} the marathon (difference $ \langle \pi_{10}  \rangle -  \langle \pi_{21}  \rangle $ for women was not significant)
+ 		It is  also worthy to compare the \textit{pace} ($ \pi $ - measured in \textit{min/Km}) across different races. 
+ 		One of course would expect that longer races require higher pace ($ \pi_{10km} < \pi_{21km} < \pi_{42km} $). 
+ 		These differences were found to be significant for men in all races  \ref{men_pace_dist_lausanne} and for women running the marathon \ref{women_pace_dist_lausanne} ($ \pi_{10}$ and  $ \pi_{21}  $ were not significantly different for women)
  		
 		\begin{figure}[h]	
  			\centering
@@ -205,7 +162,54 @@ as show in \cite{connick2015relative} blabalblab
  			\subfigure[]{\includegraphics[scale=0.45]{../data_analysis/plots_for_paper/men_pace_dist_lausanne.pdf}\label{men_pace_dist_lausanne}}
  		
  			\caption{Runners' pace distribution in 2016 Lausanne Marathon, for women (a) and men (b), divided by distance (color-coded).}
- 		\end{figure}		 		
+ 		\end{figure}	
+ 	
+ 		\subsection*{Overall demographics}
+ 	
+ 	In fig. \ref{participation_overall_by_distance} and \ref{participation_overall_by_gender} we show respectively how the number of runners increased in the last 15 years, by distances and gender. 
+ 	This raise was steeper for man than for women (fig. \ref{participation_overall_by_gender}), and steeper in the shorter distance (10 Km) than in the longer ones ( fig. \ref{participation_overall_by_distance} - participants in full marathons seems to have decreased though) \footnote{For simplicity we only include the most popular distances. 
+ 		There are many events that include shorter distances, like 3 Km, 5 Km, usually attended by a small fraction of young runners.}.
+ 	
+ 	\begin{figure}[h]	
+ 		
+ 		\centering
+ 		
+ 		\subfigure[]{\includegraphics[scale=0.8]{../data_analysis/plots_for_paper/participation_overall_by_distance.pdf}\label{participation_overall_by_distance}}
+ 		%					\hfill
+ 		\subfigure[]{\includegraphics[scale=0.8]{../data_analysis/plots_for_paper/participation_overall_by_gender.pdf}\label{participation_overall_by_gender}}
+ 		
+ 		\caption{Number of participants in running competition in Switzerland, across time, by distance (a) and gender (b).}
+ 		
+ 	\end{figure}		
+ 	
+ 	For a significant analysis of runners' performance, it is important to check the amount of data present in the various events, and therefore first assess the heterogeneity of  events popularity.
+ 	In fig. \ref{dist_number_editions_race} we show the  distribution of number of editions each event was hosted, across all history. Counting all editions of  all races as independent, we recorded 222 events. 
+ 	More interestingly in fig. \ref{number_runners_per_race} one can see the broad distribution of number of participants in the different events. In particular, a power-law fit  ( $ f(x) \sim x^{-\alpha} $) provides an exponent of $ \alpha = 1.69 \pm 0.05 $\footnote{The power-law starts from  a lower-bound, whose value results as well from the fitting procedure: $ x_{min} = 688  $ runners/race}.
+ 	
+ 	\begin{figure}[h]	
+ 		\centering
+ 		
+ 		\subfigure[]{\includegraphics[scale=0.4]{../data_analysis/plots_for_paper/dist_number_editions_race.pdf}\label{dist_number_editions_race}}
+ 		%					\hfill
+ 		\subfigure[]{\includegraphics[scale=0.4]{../data_analysis/plots_for_paper/number_runners_per_race.pdf}\label{number_runners_per_race}}
+ 		
+ 		\caption{Assess popularity of running competitions, in Switzerland.}
+ 	\end{figure}		
+ 	
+ 	Inversely, one can measure how participative runners have been across Switzerland. 
+ 	In fig. \ref{number_races_per_runner} we show the distribution\footnote{		One can see that a log-normal would fit better in this case than a power-law model. In particular the fitted parameters are $ \mu = -0.70, \sigma  = 1.55 $} of  the number of events to which each runners participated. We collected data from  a total number of 531426 runners.
+ 	
+ 	
+ 	
+ 	\begin{figure}[h]	
+ 		\centering
+ 		
+ 		\subfigure[]{\includegraphics[scale=0.4]{../data_analysis/plots_for_paper/number_races_per_runner.pdf}\label{number_races_per_runner}}
+ 		%					\hfill
+ 		%			\subfigure[]{\includegraphics[scale=0.4]{../data_analysis/plots_for_paper/}\label{}}
+ 		
+ 		\caption{Assess how participative runners are across competitions, in Switzerland.}
+ 	\end{figure}						 		
 	
 	
 	\subsection*{Overall performance analysis}
