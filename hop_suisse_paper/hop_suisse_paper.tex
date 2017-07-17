@@ -321,9 +321,9 @@ as show in \cite{connick2015relative} blabalblab
         \end{itemize}
         Some of the fields were directly parsed from the webpage. Some others were derived. For
         example the sex is derived from the name of the person and from the category.
-        In the following we show the techniques used.
+        In the following we show the most significant techniques used.
 
-        \paragraph{Parsing from \url{datasport.com}}
+        \paragraph{Parsing from \url{datasport.com}.}
         We parsed for each race the ranking page sorted in alphabetical order. We found out that it
         is the page where the format is more consistent across the years.
         The webpage is visually formatted in a table-like structure as shown in Figure \ref{fig:exParsing}.
@@ -336,16 +336,15 @@ as show in \cite{connick2015relative} blabalblab
         For this reason, we used a conservative approach in the parsing and in the post-processing phase 
         to reduce as much as possible the number of errors. 
 
-        \paragraph{User ID} There is not a reliable way to extract the User ID from the webpage.
+        \paragraph{User ID.} There is not a reliable way to extract the User ID from the webpage.
         We identify a \textit{runner} with the name and the year of birth. 
         This is the definition
-        that in our tests reduces more the number of errors. 
+        that more reduces the number of errors in our tests.
 
-        There are two different kind of errors in this approach:
+        There are two different kind of potential errors in this approach:
         \begin{itemize} 
                 \item The name can contain spell errors in some entry or it can be reported in the 
                     reversed order. We call this Type I error.
-                    Our algorithm is not able to treat this kind of errors.
                     For example Abbot Mary born in 1974 and Mary Abbot born in
                     1974 are considered two different runners.
                     However, for our analysis this is not a serious problem.
@@ -367,7 +366,7 @@ as show in \cite{connick2015relative} blabalblab
         @ GIANROCCO devo spiegare come viene fuori 0.5\%? E' molto a caso come motivazione anche se credo la
         stima sia sensata.
 
-        \paragraph{Sex} There is no information about the sex in the online dataset.
+        \paragraph{Sex.} There is no information about the sex on \url{datasport.com}.
         The most reliable indicator for the sex of an entry is the category. For example, in 
         the category $M40$ there are only males with less than 40 years and this is true for
         each race where this category is present.
@@ -378,7 +377,7 @@ as show in \cite{connick2015relative} blabalblab
         each name the probability of being a male or female name.
         Averaging over all the names in the category we computed the male/female
         probability of the whole category. We only considered categories with a 
-        male/female probability greater than $85\%$. This is due to the presence
+        male/female probability greater than $85\%$. The threshold is due to the presence
         of mixed categories.
         We also considered categories with a significant number of entries. 1 or 2-entries categories
         present the same issues of an approach based only on the name of the person.
